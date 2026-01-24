@@ -340,7 +340,7 @@ search_plugins() {
 
         local results
         results=$(echo "$manifest" | jq -r --arg q "$query" \
-            '.categories[].plugins[] | select(.name | test($q; "i")) or select(.description | test($q; "i")) | "  \(.name): \(.description)"')
+            '.categories[].plugins[] | select((.name | test($q; "i")) or (.description | test($q; "i")) or (.tags[]? | test($q; "i"))) | "  \(.name): \(.description)"')
 
         if [[ -n "$results" ]]; then
             found=true
