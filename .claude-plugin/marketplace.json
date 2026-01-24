@@ -1,0 +1,47 @@
+{
+  "name": "awesome-claude-agents",
+  "version": "1.0.0",
+  "author": "Smail Oubaalla",
+  "description": "Curated collection of Claude Code sub-agents, plugins, and templates",
+  "homepage": "https://github.com/smaiil/awesome-claude-agents",
+  "categories": [
+    {
+      "id": "core-development",
+      "name": "Core Development",
+      "path": "categories/01-core-development",
+      "description": "Essential development agents for everyday coding tasks",
+      "plugins": [
+        {
+          "name": "code-reviewer",
+          "file": "code-reviewer.md",
+          "description": "Senior code reviewer for quality, security, and best practices",
+          "version": "1.0.0",
+          "tags": ["review", "quality", "security"]
+        }
+      ]
+    },
+    {
+      "id": "language-specialists",
+      "name": "Language Specialists",
+      "path": "categories/02-language-specialists",
+      "description": "Language-specific expert agents",
+      "plugins": []
+    },
+    {
+      "id": "infrastructure",
+      "name": "Infrastructure",
+      "path": "categories/03-infrastructure",
+      "description": "DevOps, cloud, and deployment specialists",
+      "plugins": []
+    }
+  ],
+  "templates": [
+    {
+      "name": "pr-description",
+      "file": "templates/pr-description.md",
+      "description": "Generate comprehensive PR descriptions",
+      "version": "1.0.0",
+      "tags": ["git", "workflow"]
+    }
+  ]
+}
