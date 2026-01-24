@@ -5,7 +5,7 @@
 
 set -e
 
-REPO="USER/awesome-claude-agents"  # Update with your GitHub username
+REPO="Smaiil/awesome-claude-agents"
 INSTALL_DIR="${HOME}/.local/bin"
 CLAUDE_DIR="${HOME}/.claude"
 

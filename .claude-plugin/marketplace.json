@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "author": "Smail Oubaalla",
   "description": "Curated collection of Claude Code sub-agents, plugins, and templates",
-  "homepage": "https://github.com/smaiil/awesome-claude-agents",
+  "homepage": "https://github.com/Smaiil/awesome-claude-agents",
   "categories": [
     {
       "id": "core-development",

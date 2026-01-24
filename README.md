@@ -7,25 +7,25 @@ A curated collection of Claude Code sub-agents, plugins, and reusable templates.
 ### Install the CLI
 
 ```bash
-curl -sL https://raw.githubusercontent.com/USER/awesome-claude-agents/main/install.sh | bash
+curl -sL https://raw.githubusercontent.com/Smaiil/awesome-claude-agents/main/install.sh | bash
 ```
 
 Or manually:
 
 ```bash
 # Download CLI
-curl -sL https://raw.githubusercontent.com/USER/awesome-claude-agents/main/tools/cli/claude-plugin -o ~/.local/bin/claude-plugin
+curl -sL https://raw.githubusercontent.com/Smaiil/awesome-claude-agents/main/tools/cli/claude-plugin -o ~/.local/bin/claude-plugin
 chmod +x ~/.local/bin/claude-plugin
 
 # Add this registry
-claude-plugin marketplace add USER/awesome-claude-agents
+claude-plugin marketplace add Smaiil/awesome-claude-agents
 ```
 
 ### Usage
 
 ```bash
 # Add a registry
-claude-plugin marketplace add USER/awesome-claude-agents
+claude-plugin marketplace add Smaiil/awesome-claude-agents
 
 # List available plugins
 claude-plugin list
