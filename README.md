@@ -1,6 +1,6 @@
 # Awesome Claude Agents
 
-A curated collection of Claude Code sub-agents, plugins, and reusable templates.
+A curated collection of Claude Code agents, skills, and reusable templates.
 
 ## Quick Start
 
@@ -27,16 +27,19 @@ claude-plugin marketplace add Smaiil/awesome-claude-agents
 # Add a registry
 claude-plugin marketplace add Smaiil/awesome-claude-agents
 
-# List available plugins
+# List available agents and skills
 claude-plugin list
 
-# Install a plugin
+# Install an agent
 claude-plugin install code-reviewer
 
-# Search plugins
+# Install a skill
+claude-plugin install commit
+
+# Search by tag
 claude-plugin search "security"
 
-# List installed plugins
+# List installed
 claude-plugin installed
 
 # Uninstall
@@ -47,23 +50,63 @@ claude-plugin uninstall code-reviewer
 
 ```
 awesome-claude-agents/
-├── .claude-plugin/
-│   └── marketplace.json       # Registry manifest
-├── categories/
-│   ├── 01-core-development/   # Core coding agents
-│   ├── 02-language-specialists/
-│   └── 03-infrastructure/
-├── templates/                  # Reusable prompt templates
+├── agents/                    # Sub-agents (spawned via Task tool)
+│   ├── core-development/      # Code review, debugging, etc.
+│   └── language-specialists/  # Language-specific experts
+├── skills/                    # Slash commands (/command)
+│   ├── git/                   # Git workflow automation
+│   ├── testing/               # Test execution and coverage
+│   └── docs/                  # Documentation generation
+├── templates/                 # Reusable prompt templates
 ├── tools/
 │   └── cli/                   # CLI tool source
+├── .claude-plugin/
+│   └── marketplace.json       # Registry manifest
 └── install.sh                 # One-liner installer
 ```
 
-## Creating Plugins
+## Agents vs Skills
 
-### Sub-Agent Format
+| Type          | Purpose                                          | How to Use                                       |
+| ------------- | ------------------------------------------------ | ------------------------------------------------ |
+| **Agents**    | Autonomous sub-agents with specialized expertise | Spawned via `Task` tool or agent definitions     |
+| **Skills**    | Action-oriented slash commands for workflows     | Invoked with `/command` (e.g., `/commit`)        |
+| **Templates** | Reusable prompt snippets                         | Copy into your prompts                           |
 
-Create a markdown file in the appropriate category:
+## Available Agents
+
+### Core Development
+
+- **code-reviewer** - Senior code reviewer for quality, security, and best practices
+
+### Language Specialists
+
+- **c-specialist** - C systems programming expert
+- **cpp-specialist** - Modern C++ development expert
+- **python-specialist** - Python web, data science, and automation
+- **dotnet-specialist** - .NET and C# enterprise development
+- **typescript-specialist** - TypeScript full-stack development
+
+## Available Skills
+
+### Git Workflows
+
+- **/commit** - Create well-formatted conventional commits
+- **/pr** - Create pull requests with comprehensive descriptions
+- **/changelog** - Generate changelog from git history
+
+### Testing
+
+- **/test** - Run tests and analyze results
+- **/coverage** - Generate and analyze coverage reports
+
+### Documentation
+
+- **/readme** - Generate or update project README
+
+## Creating Agents
+
+Create a markdown file in `agents/<category>/`:
 
 ```markdown
 ---
@@ -84,48 +127,44 @@ Describe the agent's purpose and expertise.
 - Skill 1
 - Skill 2
 
-## Checklist
-- [ ] Task 1
-- [ ] Task 2
-
 ## Communication Protocol
 How to invoke this agent.
 ```
 
-### Register in marketplace.json
+## Creating Skills
 
-Add your plugin to `.claude-plugin/marketplace.json`:
+Create a markdown file in `skills/<category>/`:
 
-```json
-{
-  "categories": [
-    {
-      "id": "core-development",
-      "plugins": [
-        {
-          "name": "my-agent",
-          "file": "my-agent.md",
-          "description": "What it does",
-          "version": "1.0.0"
-        }
-      ]
-    }
-  ]
-}
-```
+```markdown
+---
+name: my-skill
+version: 1.0.0
+description: What this skill does
+author: your-name
+tags: [workflow, automation]
+---
 
-## Templates
+# /my-skill
 
-Templates are reusable prompts for common tasks. Install them with:
+Brief description of the command.
 
-```bash
-claude-plugin template install pr-description
+## Workflow
+1. Step one
+2. Step two
+3. Step three
+
+## Arguments
+- `arg1`: Description
+- `--flag`: Description
+
+## Output Format
+Describe expected output.
 ```
 
 ## Contributing
 
 1. Fork this repository
-2. Add your plugin/template
+2. Add your agent or skill
 3. Update `marketplace.json`
 4. Submit a PR
 

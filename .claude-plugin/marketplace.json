@@ -2,15 +2,15 @@
   "name": "awesome-claude-agents",
   "version": "1.0.0",
   "author": "Smail Oubaalla",
-  "description": "Curated collection of Claude Code sub-agents, plugins, and templates",
+  "description": "Curated collection of Claude Code agents, skills, and templates",
   "homepage": "https://github.com/Smaiil/awesome-claude-agents",
-  "categories": [
+  "agents": [
     {
-      "id": "core-development",
+      "category": "core-development",
       "name": "Core Development",
-      "path": "categories/01-core-development",
+      "path": "agents/core-development",
       "description": "Essential development agents for everyday coding tasks",
-      "plugins": [
+      "items": [
         {
           "name": "code-reviewer",
           "file": "code-reviewer.md",
@@ -21,18 +21,114 @@
       ]
     },
     {
-      "id": "language-specialists",
+      "category": "language-specialists",
       "name": "Language Specialists",
-      "path": "categories/02-language-specialists",
+      "path": "agents/language-specialists",
       "description": "Language-specific expert agents",
-      "plugins": []
+      "items": [
+        {
+          "name": "c-specialist",
+          "file": "c-specialist.md",
+          "description": "C language expert for systems programming, embedded, and performance-critical code",
+          "version": "1.0.0",
+          "tags": ["c", "systems", "embedded", "performance"]
+        },
+        {
+          "name": "cpp-specialist",
+          "file": "cpp-specialist.md",
+          "description": "C++ expert for modern C++ development, templates, and high-performance systems",
+          "version": "1.0.0",
+          "tags": ["cpp", "c++", "modern-cpp", "templates", "performance"]
+        },
+        {
+          "name": "python-specialist",
+          "file": "python-specialist.md",
+          "description": "Python expert for web development, data science, automation, and best practices",
+          "version": "1.0.0",
+          "tags": ["python", "django", "fastapi", "data-science", "automation"]
+        },
+        {
+          "name": "dotnet-specialist",
+          "file": "dotnet-specialist.md",
+          "description": ".NET expert for C#, ASP.NET Core, and enterprise application development",
+          "version": "1.0.0",
+          "tags": ["dotnet", "csharp", "aspnet", "entity-framework", "enterprise"]
+        },
+        {
+          "name": "typescript-specialist",
+          "file": "typescript-specialist.md",
+          "description": "TypeScript expert for type-safe JavaScript, React, Node.js, and full-stack development",
+          "version": "1.0.0",
+          "tags": ["typescript", "react", "nodejs", "javascript", "full-stack"]
+        }
+      ]
+    }  ],
+  "skills": [
+    {
+      "category": "git",
+      "name": "Git Workflows",
+      "path": "skills/git",
+      "description": "Git and GitHub workflow automation",
+      "items": [
+        {
+          "name": "commit",
+          "file": "commit.md",
+          "description": "Create well-formatted git commits with conventional commit messages",
+          "version": "1.0.0",
+          "tags": ["git", "commit", "workflow"]
+        },
+        {
+          "name": "pr",
+          "file": "pr.md",
+          "description": "Create pull requests with comprehensive descriptions",
+          "version": "1.0.0",
+          "tags": ["git", "github", "pr", "workflow"]
+        },
+        {
+          "name": "changelog",
+          "file": "changelog.md",
+          "description": "Generate changelog entries from git history",
+          "version": "1.0.0",
+          "tags": ["git", "changelog", "release"]
+        }
+      ]
     },
     {
-      "id": "infrastructure",
-      "name": "Infrastructure",
-      "path": "categories/03-infrastructure",
-      "description": "DevOps, cloud, and deployment specialists",
-      "plugins": []
+      "category": "testing",
+      "name": "Testing",
+      "path": "skills/testing",
+      "description": "Test execution and coverage analysis",
+      "items": [
+        {
+          "name": "test",
+          "file": "test.md",
+          "description": "Run tests and analyze results",
+          "version": "1.0.0",
+          "tags": ["testing", "quality", "workflow"]
+        },
+        {
+          "name": "coverage",
+          "file": "coverage.md",
+          "description": "Generate and analyze test coverage reports",
+          "version": "1.0.0",
+          "tags": ["testing", "coverage", "quality"]
+        }
+      ]
+    },
+    {
+      "category": "docs",
+      "name": "Documentation",
+      "path": "skills/docs",
+      "description": "Documentation generation and maintenance",
+      "items": [
+        {
+          "name": "readme",
+          "file": "readme.md",
+          "description": "Generate or update project README",
+          "version": "1.0.0",
+          "tags": ["docs", "readme", "documentation"]
+        }
+      ]
     }
   ],
   "templates": [
