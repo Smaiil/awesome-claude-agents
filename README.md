@@ -1,6 +1,44 @@
 # Awesome Claude Agents
 
-A curated collection of Claude Code agents, skills, and reusable templates.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Agents](https://img.shields.io/badge/agents-33-blue.svg)](./agents)
+[![Skills](https://img.shields.io/badge/skills-80+-green.svg)](./skills)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+
+> 🚀 A curated collection of 100+ production-ready Claude Code agents, skills, and templates for every developer workflow.
+
+Supercharge your development with specialized AI agents for code review, architecture design, testing, DevOps, security, and more. Plus 80+ skills covering every major language, framework, database, and cloud platform.
+
+**🎯 Featured Use Cases:** Code Review • API Design • Database Optimization • Kubernetes • Security Audits • Performance Tuning • CI/CD Automation
+
+## Why Use Awesome Claude Agents?
+
+- **Save Time** - Automate repetitive development tasks with pre-built workflows
+- **Best Practices** - Every agent includes industry best practices and security guidelines
+- **Comprehensive** - Covers the entire development lifecycle from design to deployment
+- **Easy Integration** - Simple CLI installation, works with Claude Code out of the box
+- **Production Ready** - Battle-tested workflows with error handling and edge cases
+- **Extensible** - Easy to customize or create your own agents following the templates
+
+## Real-World Examples
+
+### Code Review Automation
+```bash
+claude-plugin install code-reviewer
+# Now use the agent in Claude Code to review PRs, identify security issues, and suggest improvements
+```
+
+### Kubernetes Deployment
+```bash
+claude-plugin install kubernetes-operator
+# Get help with K8s manifests, Helm charts, RBAC, and cluster troubleshooting
+```
+
+### API Design
+```bash
+claude-plugin install api-designer
+# Design RESTful APIs, GraphQL schemas, and OpenAPI specifications with best practices
+```
 
 ## Quick Start
 
@@ -46,6 +84,31 @@ claude-plugin installed
 claude-plugin uninstall code-reviewer
 ```
 
+## ⭐ Featured Agents
+
+Get started with these popular agents:
+
+- **[code-reviewer](agents/core-development/code-reviewer.md)** - Senior code reviewer for quality, security, and best practices
+- **[system-architect](agents/architecture-design/system-architect.md)** - High-level system design, microservices, scalability patterns
+- **[security-auditor](agents/security/security-auditor.md)** - OWASP Top 10, vulnerability assessment, SAST/DAST
+- **[kubernetes-operator](agents/devops-infrastructure/kubernetes-operator.md)** - K8s manifests, Helm charts, cluster management
+- **[performance-engineer](agents/performance-reliability/performance-engineer.md)** - Profiling, optimization, caching, load testing
+- **[sql-expert](agents/data/sql-expert.md)** - Complex queries, optimization, execution plans
+- **[testing-strategist](agents/code-quality/testing-strategist.md)** - Test pyramid, TDD, BDD, comprehensive testing
+- **[api-designer](agents/architecture-design/api-designer.md)** - RESTful, GraphQL, gRPC API design
+
+## 🎨 Featured Skills
+
+Popular workflow automations:
+
+- **[/commit](skills/git/commit.md)** - Create well-formatted conventional commits
+- **[/jest](skills/testing/jest.md)** - Jest JavaScript testing framework
+- **[/docker](skills/devops-tools/docker.md)** - Docker containerization
+- **[/react](skills/frameworks/react.md)** - React component development
+- **[/aws](skills/cloud-platforms/aws.md)** - Amazon Web Services cloud platform
+- **[/postgresql](skills/databases/postgresql.md)** - PostgreSQL relational database
+- **[/rest-api](skills/api-protocols/rest-api.md)** - RESTful API design and development
+
 ## Repository Structure
 
 ```
@@ -64,6 +127,14 @@ awesome-claude-agents/
 │   └── marketplace.json       # Registry manifest
 └── install.sh                 # One-liner installer
 ```
+
+## 📊 What's Inside
+
+- **33 Specialized Agents** across 10 categories
+- **80+ Automation Skills** covering languages, frameworks, databases, cloud platforms, DevOps tools, and more
+- **Production-ready workflows** with best practices
+- **Easy CLI installation** for seamless integration
+- **Comprehensive documentation** with examples
 
 ## Agents vs Skills
 
