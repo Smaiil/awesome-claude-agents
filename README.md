@@ -1,3 +1,9 @@
+<div align="center">
+  <img src="banner.png" alt="Awesome Claude Agents Banner" width="100%">
+</div>
+
+<br>
+
 # Awesome Claude Agents
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
