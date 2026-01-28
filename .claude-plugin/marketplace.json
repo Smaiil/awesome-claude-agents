@@ -62,7 +62,268 @@
           "tags": ["typescript", "react", "nodejs", "javascript", "full-stack"]
         }
       ]
-    }  ],
+    },
+    {
+      "category": "architecture-design",
+      "name": "Architecture & Design",
+      "path": "agents/architecture-design",
+      "description": "System architecture and API design experts",
+      "items": [
+        {
+          "name": "system-architect",
+          "file": "system-architect.md",
+          "description": "System architecture expert specializing in high-level design, microservices architecture, scalability patterns, and distributed systems",
+          "version": "1.0.0",
+          "tags": ["architecture", "microservices", "scalability", "distributed-systems"]
+        },
+        {
+          "name": "api-designer",
+          "file": "api-designer.md",
+          "description": "API design expert specializing in RESTful APIs, GraphQL, gRPC, and OpenAPI specifications",
+          "version": "1.0.0",
+          "tags": ["api", "rest", "graphql", "grpc", "openapi"]
+        },
+        {
+          "name": "database-architect",
+          "file": "database-architect.md",
+          "description": "Database architecture expert specializing in schema design, NoSQL vs SQL selection, indexing strategies, and sharding patterns",
+          "version": "1.0.0",
+          "tags": ["database", "sql", "nosql", "indexing", "sharding"]
+        },
+        {
+          "name": "event-driven-architect",
+          "file": "event-driven-architect.md",
+          "description": "Event-driven architecture expert specializing in event sourcing, CQRS, message queues, and saga patterns",
+          "version": "1.0.0",
+          "tags": ["event-driven", "cqrs", "messaging", "saga", "event-sourcing"]
+        }
+      ]
+    },
+    {
+      "category": "code-quality",
+      "name": "Code Quality",
+      "path": "agents/code-quality",
+      "description": "Code quality, testing, and documentation experts",
+      "items": [
+        {
+          "name": "refactoring-expert",
+          "file": "refactoring-expert.md",
+          "description": "Refactoring specialist focusing on legacy code modernization, design pattern application, and technical debt reduction",
+          "version": "1.0.0",
+          "tags": ["refactoring", "patterns", "technical-debt", "legacy"]
+        },
+        {
+          "name": "testing-strategist",
+          "file": "testing-strategist.md",
+          "description": "Testing strategy expert specializing in test pyramid, TDD, BDD, and comprehensive test coverage",
+          "version": "1.0.0",
+          "tags": ["testing", "tdd", "bdd", "quality", "coverage"]
+        },
+        {
+          "name": "documentation-writer",
+          "file": "documentation-writer.md",
+          "description": "Documentation specialist focusing on READMEs, API documentation, ADRs, and technical diagrams",
+          "version": "1.0.0",
+          "tags": ["documentation", "readme", "adr", "technical-writing"]
+        }
+      ]
+    },
+    {
+      "category": "devops-infrastructure",
+      "name": "DevOps & Infrastructure",
+      "path": "agents/devops-infrastructure",
+      "description": "DevOps, containerization, and cloud infrastructure experts",
+      "items": [
+        {
+          "name": "ci-cd-engineer",
+          "file": "ci-cd-engineer.md",
+          "description": "CI/CD expert specializing in GitHub Actions, GitLab CI, Jenkins, and automated pipelines",
+          "version": "1.0.0",
+          "tags": ["ci-cd", "github-actions", "gitlab-ci", "jenkins", "automation"]
+        },
+        {
+          "name": "docker-specialist",
+          "file": "docker-specialist.md",
+          "description": "Docker expert specializing in Dockerfile optimization, multi-stage builds, and container security",
+          "version": "1.0.0",
+          "tags": ["docker", "containers", "optimization", "security"]
+        },
+        {
+          "name": "kubernetes-operator",
+          "file": "kubernetes-operator.md",
+          "description": "Kubernetes expert specializing in K8s manifests, Helm charts, autoscaling, and RBAC",
+          "version": "1.0.0",
+          "tags": ["kubernetes", "k8s", "helm", "orchestration", "cloud-native"]
+        },
+        {
+          "name": "terraform-engineer",
+          "file": "terraform-engineer.md",
+          "description": "Terraform expert specializing in Infrastructure as Code, module design, state management, and workspaces",
+          "version": "1.0.0",
+          "tags": ["terraform", "iac", "infrastructure", "automation"]
+        },
+        {
+          "name": "cloud-architect",
+          "file": "cloud-architect.md",
+          "description": "Cloud architecture expert specializing in AWS, Azure, GCP, serverless patterns, and cost optimization",
+          "version": "1.0.0",
+          "tags": ["cloud", "aws", "azure", "gcp", "serverless", "cost-optimization"]
+        }
+      ]
+    },
+    {
+      "category": "security",
+      "name": "Security",
+      "path": "agents/security",
+      "description": "Security, authentication, and secrets management experts",
+      "items": [
+        {
+          "name": "security-auditor",
+          "file": "security-auditor.md",
+          "description": "Security audit expert specializing in OWASP Top 10, SAST, DAST, and threat modeling",
+          "version": "1.0.0",
+          "tags": ["security", "owasp", "sast", "dast", "audit"]
+        },
+        {
+          "name": "auth-specialist",
+          "file": "auth-specialist.md",
+          "description": "Authentication and authorization expert specializing in OAuth 2.0, OIDC, JWT, SSO, and MFA",
+          "version": "1.0.0",
+          "tags": ["auth", "oauth", "jwt", "sso", "mfa"]
+        },
+        {
+          "name": "secrets-manager",
+          "file": "secrets-manager.md",
+          "description": "Secrets management expert specializing in HashiCorp Vault, secret rotation, and Kubernetes secrets",
+          "version": "1.0.0",
+          "tags": ["secrets", "vault", "security", "encryption"]
+        }
+      ]
+    },
+    {
+      "category": "performance-reliability",
+      "name": "Performance & Reliability",
+      "path": "agents/performance-reliability",
+      "description": "Performance optimization, observability, and SRE experts",
+      "items": [
+        {
+          "name": "performance-engineer",
+          "file": "performance-engineer.md",
+          "description": "Performance optimization expert specializing in profiling, optimization, caching strategies, and load testing",
+          "version": "1.0.0",
+          "tags": ["performance", "optimization", "caching", "profiling"]
+        },
+        {
+          "name": "observability-expert",
+          "file": "observability-expert.md",
+          "description": "Observability expert specializing in logging, metrics, tracing, dashboards, and alerts",
+          "version": "1.0.0",
+          "tags": ["observability", "logging", "metrics", "tracing", "monitoring"]
+        },
+        {
+          "name": "sre-specialist",
+          "file": "sre-specialist.md",
+          "description": "Site Reliability Engineering expert specializing in SLOs, incident response, and chaos engineering",
+          "version": "1.0.0",
+          "tags": ["sre", "reliability", "slo", "incident-response", "chaos-engineering"]
+        }
+      ]
+    },
+    {
+      "category": "data",
+      "name": "Data",
+      "path": "agents/data",
+      "description": "SQL, data migration, and caching experts",
+      "items": [
+        {
+          "name": "sql-expert",
+          "file": "sql-expert.md",
+          "description": "SQL optimization expert specializing in complex queries, indexing strategies, execution plans, and query performance",
+          "version": "1.0.0",
+          "tags": ["sql", "database", "optimization", "queries"]
+        },
+        {
+          "name": "data-migration-specialist",
+          "file": "data-migration-specialist.md",
+          "description": "Data migration expert specializing in ETL processes, schema migrations, and zero-downtime deployments",
+          "version": "1.0.0",
+          "tags": ["data-migration", "etl", "schema", "zero-downtime"]
+        },
+        {
+          "name": "caching-strategist",
+          "file": "caching-strategist.md",
+          "description": "Caching strategy expert specializing in Redis, cache invalidation patterns, and distributed caching",
+          "version": "1.0.0",
+          "tags": ["caching", "redis", "performance", "distributed"]
+        }
+      ]
+    },
+    {
+      "category": "developer-experience",
+      "name": "Developer Experience",
+      "path": "agents/developer-experience",
+      "description": "Git, CLI, and development environment experts",
+      "items": [
+        {
+          "name": "git-wizard",
+          "file": "git-wizard.md",
+          "description": "Git expert specializing in workflows, branching strategies, hooks, and conflict resolution",
+          "version": "1.0.0",
+          "tags": ["git", "version-control", "workflow", "collaboration"]
+        },
+        {
+          "name": "cli-builder",
+          "file": "cli-builder.md",
+          "description": "CLI design expert specializing in command-line interface design, argument parsing, shell completion, and user experience",
+          "version": "1.0.0",
+          "tags": ["cli", "terminal", "ux", "developer-tools"]
+        },
+        {
+          "name": "dev-environment-setup",
+          "file": "dev-environment-setup.md",
+          "description": "Development environment expert specializing in Docker Compose, devcontainers, and local Kubernetes",
+          "version": "1.0.0",
+          "tags": ["dev-environment", "docker-compose", "devcontainers", "setup"]
+        }
+      ]
+    },
+    {
+      "category": "specialized-tasks",
+      "name": "Specialized Tasks",
+      "path": "agents/specialized-tasks",
+      "description": "Specialized experts for specific technical challenges",
+      "items": [
+        {
+          "name": "regex-master",
+          "file": "regex-master.md",
+          "description": "Regular expression expert specializing in pattern design, parsing, validation, and optimization",
+          "version": "1.0.0",
+          "tags": ["regex", "patterns", "parsing", "validation"]
+        },
+        {
+          "name": "dependency-manager",
+          "file": "dependency-manager.md",
+          "description": "Dependency management expert specializing in version conflicts, security updates, and license compliance",
+          "version": "1.0.0",
+          "tags": ["dependencies", "security", "licensing", "package-management"]
+        },
+        {
+          "name": "debugging-detective",
+          "file": "debugging-detective.md",
+          "description": "Debugging expert specializing in systematic debugging, root cause analysis, and troubleshooting",
+          "version": "1.0.0",
+          "tags": ["debugging", "troubleshooting", "root-cause", "analysis"]
+        },
+        {
+          "name": "error-handler",
+          "file": "error-handler.md",
+          "description": "Error handling expert specializing in exception design, retry patterns, and circuit breakers",
+          "version": "1.0.0",
+          "tags": ["error-handling", "resilience", "retry", "circuit-breaker"]
+        }
+      ]
+    }
+  ],
   "skills": [
     {
       "category": "git",

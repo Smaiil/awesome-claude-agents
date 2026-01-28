@@ -87,6 +87,58 @@ awesome-claude-agents/
 - **dotnet-specialist** - .NET and C# enterprise development
 - **typescript-specialist** - TypeScript full-stack development
 
+### Architecture & Design
+
+- **system-architect** - High-level system design, microservices, scalability patterns
+- **api-designer** - RESTful, GraphQL, gRPC API design and OpenAPI specs
+- **database-architect** - Schema design, NoSQL modeling, indexing strategies
+- **event-driven-architect** - Event sourcing, CQRS, message queues, sagas
+
+### Code Quality
+
+- **refactoring-expert** - Legacy modernization, design patterns, technical debt
+- **testing-strategist** - Test pyramid, TDD, BDD, comprehensive testing
+- **documentation-writer** - READMEs, API docs, ADRs, technical writing
+
+### DevOps & Infrastructure
+
+- **ci-cd-engineer** - Pipeline design, GitHub Actions, GitLab CI, Jenkins
+- **docker-specialist** - Container optimization, multi-stage builds, security
+- **kubernetes-operator** - K8s manifests, Helm charts, cluster management
+- **terraform-engineer** - Infrastructure as Code, modules, state management
+- **cloud-architect** - AWS/Azure/GCP architecture, serverless, cost optimization
+
+### Security
+
+- **security-auditor** - OWASP Top 10, vulnerability assessment, SAST/DAST
+- **auth-specialist** - OAuth 2.0, OIDC, JWT, SSO, authentication flows
+- **secrets-manager** - Vault, secret rotation, secure configuration
+
+### Performance & Reliability
+
+- **performance-engineer** - Profiling, optimization, caching, load testing
+- **observability-expert** - Logging, metrics, tracing, dashboards, alerting
+- **sre-specialist** - SLOs, incident response, chaos engineering, runbooks
+
+### Data
+
+- **sql-expert** - Complex queries, optimization, execution plans, indexing
+- **data-migration-specialist** - ETL pipelines, schema migrations, zero-downtime
+- **caching-strategist** - Redis patterns, cache invalidation, distributed caching
+
+### Developer Experience
+
+- **git-wizard** - Git workflows, branching strategies, conflict resolution
+- **cli-builder** - Command-line interface design, argument parsing, completions
+- **dev-environment-setup** - Docker Compose, devcontainers, local development
+
+### Specialized Tasks
+
+- **regex-master** - Regular expression patterns, parsing, text extraction
+- **dependency-manager** - Version conflicts, security audits, license compliance
+- **debugging-detective** - Systematic debugging, root cause analysis, troubleshooting
+- **error-handler** - Exception design, retry patterns, circuit breakers
+
 ## Available Skills
 
 ### Git Workflows
