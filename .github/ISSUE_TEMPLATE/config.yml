@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Discussions
+    url: https://github.com/Smaiil/awesome-claude-agents/discussions
+    about: Ask questions and discuss with the community
+  - name: 📖 Documentation
+    url: https://github.com/Smaiil/awesome-claude-agents#readme
+    about: Read the documentation
+  - name: 🤝 Contributing Guide
+    url: https://github.com/Smaiil/awesome-claude-agents/blob/main/CONTRIBUTING.md
+    about: Learn how to contribute
