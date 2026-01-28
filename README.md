@@ -147,10 +147,105 @@ awesome-claude-agents/
 - **/pr** - Create pull requests with comprehensive descriptions
 - **/changelog** - Generate changelog from git history
 
+### File Formats
+
+- **/docx** - Word document processing
+- **/xlsx** - Excel spreadsheet manipulation
+- **/pptx** - PowerPoint presentation creation
+- **/pdf** - PDF generation and manipulation
+- **/markdown** - Markdown formatting and conversion
+- **/html-css** - HTML/CSS generation and formatting
+- **/json-yaml** - JSON/YAML parsing and conversion
+- **/svg** - SVG graphics generation
+- **/images** - Image processing and optimization
+- **/archives** - ZIP/TAR archive handling
+
+### Programming Languages
+
+- **/python** - Python programming
+- **/typescript** - TypeScript development
+- **/javascript** - JavaScript coding
+- **/csharp** - C# programming
+- **/java** - Java development
+- **/go** - Go programming
+- **/rust** - Rust systems programming
+- **/kotlin** - Kotlin development
+- **/swift** - Swift programming
+- **/php** - PHP scripting
+- **/ruby** - Ruby programming
+- **/sql** - SQL queries and databases
+- **/bash** - Bash scripting
+- **/powershell** - PowerShell scripting
+
+### Frameworks
+
+- **/react** - React component development
+- **/nextjs** - Next.js full-stack applications
+- **/vue** - Vue.js progressive framework
+- **/angular** - Angular enterprise apps
+- **/svelte** - Svelte reactive framework
+- **/express** - Express.js Node server
+- **/fastapi** - FastAPI Python async framework
+- **/django** - Django Python web framework
+- **/flask** - Flask Python microframework
+- **/spring-boot** - Spring Boot Java framework
+- **/aspnet-core** - ASP.NET Core framework
+- **/rails** - Ruby on Rails framework
+- **/laravel** - Laravel PHP framework
+- **/nestjs** - NestJS TypeScript framework
+- **/gin** - Gin Go web framework
+
+### Databases
+
+- **/postgresql** - PostgreSQL relational database
+- **/mysql** - MySQL database management
+- **/mongodb** - MongoDB NoSQL document database
+- **/redis** - Redis in-memory data store
+- **/elasticsearch** - Elasticsearch search and analytics
+- **/sqlite** - SQLite embedded database
+- **/dynamodb** - AWS DynamoDB NoSQL database
+- **/cassandra** - Apache Cassandra distributed database
+
+### Cloud Platforms
+
+- **/aws** - Amazon Web Services cloud platform
+- **/azure** - Microsoft Azure cloud platform
+- **/gcp** - Google Cloud Platform
+- **/vercel** - Vercel deployment platform
+- **/cloudflare** - Cloudflare edge network and services
+
+### DevOps Tools
+
+- **/docker** - Docker containerization
+- **/kubernetes** - Kubernetes container orchestration
+- **/terraform** - Terraform infrastructure as code
+- **/ansible** - Ansible configuration management
+- **/github-actions** - GitHub Actions CI/CD
+- **/gitlab-ci** - GitLab CI/CD pipelines
+- **/nginx** - Nginx web server and reverse proxy
+- **/prometheus** - Prometheus monitoring and alerting
+
 ### Testing
 
 - **/test** - Run tests and analyze results
 - **/coverage** - Generate and analyze coverage reports
+- **/jest** - Jest JavaScript testing framework
+- **/pytest** - Pytest Python testing framework
+- **/cypress** - Cypress end-to-end testing
+- **/playwright** - Playwright browser automation
+- **/xunit** - xUnit .NET testing framework
+- **/junit** - JUnit Java testing framework
+- **/vitest** - Vitest fast unit testing
+- **/postman** - Postman API testing
+
+### API Protocols
+
+- **/rest-api** - RESTful API design and development
+- **/graphql** - GraphQL API development
+- **/grpc** - gRPC high-performance RPC
+- **/websocket** - WebSocket real-time communication
+- **/soap** - SOAP web services
+- **/webhook** - Webhook event-driven integration
 
 ### Documentation
 
