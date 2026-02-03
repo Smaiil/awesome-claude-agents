@@ -11,7 +11,10 @@
   "plugins": [
     {
       "name": "awesome-claude-agents",
-      "source": ".",
+      "source": {
+        "source": "github",
+        "repo": "Smaiil/awesome-claude-agents"
+      },
       "description": "A comprehensive marketplace of 28 production-ready agents and 74 specialized skills for Claude Code, covering development workflows, security, performance, DevOps, and more",
       "version": "1.0.0",
       "author": {
