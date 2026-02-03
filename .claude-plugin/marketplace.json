@@ -1,534 +1,76 @@
 {
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "awesome-claude-agents",
-  "version": "1.0.0",
-  "author": "Smail Oubaalla",
-  "description": "Curated collection of Claude Code agents, skills, and templates",
-  "homepage": "https://github.com/Smaiil/awesome-claude-agents",
-  "agents": [
+  "owner": {
+    "name": "Smail Oubaalla"
+  },
+  "metadata": {
+    "version": "1.0.0",
+    "description": "Curated collection of Claude Code agents, skills, and templates"
+  },
+  "plugins": [
     {
-      "category": "core-development",
-      "name": "Core Development",
-      "path": "agents/core-development",
-      "description": "Essential development agents for everyday coding tasks",
-      "items": [
-        {
-          "name": "code-reviewer",
-          "file": "code-reviewer.md",
-          "description": "Senior code reviewer for quality, security, and best practices",
-          "version": "1.0.0",
-          "tags": ["review", "quality", "security"]
-        }
-      ]
-    },
-    {
-      "category": "language-specialists",
-      "name": "Language Specialists",
-      "path": "agents/language-specialists",
-      "description": "Language-specific expert agents",
-      "items": [
-        {
-          "name": "c-specialist",
-          "file": "c-specialist.md",
-          "description": "C language expert for systems programming, embedded, and performance-critical code",
-          "version": "1.0.0",
-          "tags": ["c", "systems", "embedded", "performance"]
-        },
-        {
-          "name": "cpp-specialist",
-          "file": "cpp-specialist.md",
-          "description": "C++ expert for modern C++ development, templates, and high-performance systems",
-          "version": "1.0.0",
-          "tags": ["cpp", "c++", "modern-cpp", "templates", "performance"]
-        },
-        {
-          "name": "python-specialist",
-          "file": "python-specialist.md",
-          "description": "Python expert for web development, data science, automation, and best practices",
-          "version": "1.0.0",
-          "tags": ["python", "django", "fastapi", "data-science", "automation"]
-        },
-        {
-          "name": "dotnet-specialist",
-          "file": "dotnet-specialist.md",
-          "description": ".NET expert for C#, ASP.NET Core, and enterprise application development",
-          "version": "1.0.0",
-          "tags": ["dotnet", "csharp", "aspnet", "entity-framework", "enterprise"]
-        },
-        {
-          "name": "typescript-specialist",
-          "file": "typescript-specialist.md",
-          "description": "TypeScript expert for type-safe JavaScript, React, Node.js, and full-stack development",
-          "version": "1.0.0",
-          "tags": ["typescript", "react", "nodejs", "javascript", "full-stack"]
-        }
-      ]
-    },
-    {
-      "category": "architecture-design",
-      "name": "Architecture & Design",
-      "path": "agents/architecture-design",
-      "description": "System architecture and API design experts",
-      "items": [
-        {
-          "name": "system-architect",
-          "file": "system-architect.md",
-          "description": "System architecture expert specializing in high-level design, microservices architecture, scalability patterns, and distributed systems",
-          "version": "1.0.0",
-          "tags": ["architecture", "microservices", "scalability", "distributed-systems"]
-        },
-        {
-          "name": "api-designer",
-          "file": "api-designer.md",
-          "description": "API design expert specializing in RESTful APIs, GraphQL, gRPC, and OpenAPI specifications",
-          "version": "1.0.0",
-          "tags": ["api", "rest", "graphql", "grpc", "openapi"]
-        },
-        {
-          "name": "database-architect",
-          "file": "database-architect.md",
-          "description": "Database architecture expert specializing in schema design, NoSQL vs SQL selection, indexing strategies, and sharding patterns",
-          "version": "1.0.0",
-          "tags": ["database", "sql", "nosql", "indexing", "sharding"]
-        },
-        {
-          "name": "event-driven-architect",
-          "file": "event-driven-architect.md",
-          "description": "Event-driven architecture expert specializing in event sourcing, CQRS, message queues, and saga patterns",
-          "version": "1.0.0",
-          "tags": ["event-driven", "cqrs", "messaging", "saga", "event-sourcing"]
-        }
-      ]
-    },
-    {
-      "category": "code-quality",
-      "name": "Code Quality",
-      "path": "agents/code-quality",
-      "description": "Code quality, testing, and documentation experts",
-      "items": [
-        {
-          "name": "refactoring-expert",
-          "file": "refactoring-expert.md",
-          "description": "Refactoring specialist focusing on legacy code modernization, design pattern application, and technical debt reduction",
-          "version": "1.0.0",
-          "tags": ["refactoring", "patterns", "technical-debt", "legacy"]
-        },
-        {
-          "name": "testing-strategist",
-          "file": "testing-strategist.md",
-          "description": "Testing strategy expert specializing in test pyramid, TDD, BDD, and comprehensive test coverage",
-          "version": "1.0.0",
-          "tags": ["testing", "tdd", "bdd", "quality", "coverage"]
-        },
-        {
-          "name": "documentation-writer",
-          "file": "documentation-writer.md",
-          "description": "Documentation specialist focusing on READMEs, API documentation, ADRs, and technical diagrams",
-          "version": "1.0.0",
-          "tags": ["documentation", "readme", "adr", "technical-writing"]
-        }
-      ]
-    },
-    {
-      "category": "devops-infrastructure",
-      "name": "DevOps & Infrastructure",
-      "path": "agents/devops-infrastructure",
-      "description": "DevOps, containerization, and cloud infrastructure experts",
-      "items": [
-        {
-          "name": "ci-cd-engineer",
-          "file": "ci-cd-engineer.md",
-          "description": "CI/CD expert specializing in GitHub Actions, GitLab CI, Jenkins, and automated pipelines",
-          "version": "1.0.0",
-          "tags": ["ci-cd", "github-actions", "gitlab-ci", "jenkins", "automation"]
-        },
-        {
-          "name": "docker-specialist",
-          "file": "docker-specialist.md",
-          "description": "Docker expert specializing in Dockerfile optimization, multi-stage builds, and container security",
-          "version": "1.0.0",
-          "tags": ["docker", "containers", "optimization", "security"]
-        },
-        {
-          "name": "kubernetes-operator",
-          "file": "kubernetes-operator.md",
-          "description": "Kubernetes expert specializing in K8s manifests, Helm charts, autoscaling, and RBAC",
-          "version": "1.0.0",
-          "tags": ["kubernetes", "k8s", "helm", "orchestration", "cloud-native"]
-        },
-        {
-          "name": "terraform-engineer",
-          "file": "terraform-engineer.md",
-          "description": "Terraform expert specializing in Infrastructure as Code, module design, state management, and workspaces",
-          "version": "1.0.0",
-          "tags": ["terraform", "iac", "infrastructure", "automation"]
-        },
-        {
-          "name": "cloud-architect",
-          "file": "cloud-architect.md",
-          "description": "Cloud architecture expert specializing in AWS, Azure, GCP, serverless patterns, and cost optimization",
-          "version": "1.0.0",
-          "tags": ["cloud", "aws", "azure", "gcp", "serverless", "cost-optimization"]
-        }
-      ]
-    },
-    {
-      "category": "security",
-      "name": "Security",
-      "path": "agents/security",
-      "description": "Security, authentication, and secrets management experts",
-      "items": [
-        {
-          "name": "security-auditor",
-          "file": "security-auditor.md",
-          "description": "Security audit expert specializing in OWASP Top 10, SAST, DAST, and threat modeling",
-          "version": "1.0.0",
-          "tags": ["security", "owasp", "sast", "dast", "audit"]
-        },
-        {
-          "name": "auth-specialist",
-          "file": "auth-specialist.md",
-          "description": "Authentication and authorization expert specializing in OAuth 2.0, OIDC, JWT, SSO, and MFA",
-          "version": "1.0.0",
-          "tags": ["auth", "oauth", "jwt", "sso", "mfa"]
-        },
-        {
-          "name": "secrets-manager",
-          "file": "secrets-manager.md",
-          "description": "Secrets management expert specializing in HashiCorp Vault, secret rotation, and Kubernetes secrets",
-          "version": "1.0.0",
-          "tags": ["secrets", "vault", "security", "encryption"]
-        }
-      ]
-    },
-    {
-      "category": "performance-reliability",
-      "name": "Performance & Reliability",
-      "path": "agents/performance-reliability",
-      "description": "Performance optimization, observability, and SRE experts",
-      "items": [
-        {
-          "name": "performance-engineer",
-          "file": "performance-engineer.md",
-          "description": "Performance optimization expert specializing in profiling, optimization, caching strategies, and load testing",
-          "version": "1.0.0",
-          "tags": ["performance", "optimization", "caching", "profiling"]
-        },
-        {
-          "name": "observability-expert",
-          "file": "observability-expert.md",
-          "description": "Observability expert specializing in logging, metrics, tracing, dashboards, and alerts",
-          "version": "1.0.0",
-          "tags": ["observability", "logging", "metrics", "tracing", "monitoring"]
-        },
-        {
-          "name": "sre-specialist",
-          "file": "sre-specialist.md",
-          "description": "Site Reliability Engineering expert specializing in SLOs, incident response, and chaos engineering",
-          "version": "1.0.0",
-          "tags": ["sre", "reliability", "slo", "incident-response", "chaos-engineering"]
-        }
-      ]
-    },
-    {
-      "category": "data",
-      "name": "Data",
-      "path": "agents/data",
-      "description": "SQL, data migration, and caching experts",
-      "items": [
-        {
-          "name": "sql-expert",
-          "file": "sql-expert.md",
-          "description": "SQL optimization expert specializing in complex queries, indexing strategies, execution plans, and query performance",
-          "version": "1.0.0",
-          "tags": ["sql", "database", "optimization", "queries"]
-        },
-        {
-          "name": "data-migration-specialist",
-          "file": "data-migration-specialist.md",
-          "description": "Data migration expert specializing in ETL processes, schema migrations, and zero-downtime deployments",
-          "version": "1.0.0",
-          "tags": ["data-migration", "etl", "schema", "zero-downtime"]
-        },
-        {
-          "name": "caching-strategist",
-          "file": "caching-strategist.md",
-          "description": "Caching strategy expert specializing in Redis, cache invalidation patterns, and distributed caching",
-          "version": "1.0.0",
-          "tags": ["caching", "redis", "performance", "distributed"]
-        }
-      ]
-    },
-    {
-      "category": "developer-experience",
-      "name": "Developer Experience",
-      "path": "agents/developer-experience",
-      "description": "Git, CLI, and development environment experts",
-      "items": [
-        {
-          "name": "git-wizard",
-          "file": "git-wizard.md",
-          "description": "Git expert specializing in workflows, branching strategies, hooks, and conflict resolution",
-          "version": "1.0.0",
-          "tags": ["git", "version-control", "workflow", "collaboration"]
-        },
-        {
-          "name": "cli-builder",
-          "file": "cli-builder.md",
-          "description": "CLI design expert specializing in command-line interface design, argument parsing, shell completion, and user experience",
-          "version": "1.0.0",
-          "tags": ["cli", "terminal", "ux", "developer-tools"]
-        },
-        {
-          "name": "dev-environment-setup",
-          "file": "dev-environment-setup.md",
-          "description": "Development environment expert specializing in Docker Compose, devcontainers, and local Kubernetes",
-          "version": "1.0.0",
-          "tags": ["dev-environment", "docker-compose", "devcontainers", "setup"]
-        }
-      ]
-    },
-    {
-      "category": "specialized-tasks",
-      "name": "Specialized Tasks",
-      "path": "agents/specialized-tasks",
-      "description": "Specialized experts for specific technical challenges",
-      "items": [
-        {
-          "name": "regex-master",
-          "file": "regex-master.md",
-          "description": "Regular expression expert specializing in pattern design, parsing, validation, and optimization",
-          "version": "1.0.0",
-          "tags": ["regex", "patterns", "parsing", "validation"]
-        },
-        {
-          "name": "dependency-manager",
-          "file": "dependency-manager.md",
-          "description": "Dependency management expert specializing in version conflicts, security updates, and license compliance",
-          "version": "1.0.0",
-          "tags": ["dependencies", "security", "licensing", "package-management"]
-        },
-        {
-          "name": "debugging-detective",
-          "file": "debugging-detective.md",
-          "description": "Debugging expert specializing in systematic debugging, root cause analysis, and troubleshooting",
-          "version": "1.0.0",
-          "tags": ["debugging", "troubleshooting", "root-cause", "analysis"]
-        },
-        {
-          "name": "error-handler",
-          "file": "error-handler.md",
-          "description": "Error handling expert specializing in exception design, retry patterns, and circuit breakers",
-          "version": "1.0.0",
-          "tags": ["error-handling", "resilience", "retry", "circuit-breaker"]
-        }
-      ]
-    }
-  ],
-  "skills": [
-    {
-      "category": "git",
-      "name": "Git Workflows",
-      "path": "skills/git",
-      "description": "Git and GitHub workflow automation",
-      "items": [
-        {
-          "name": "commit",
-          "file": "commit.md",
-          "description": "Create well-formatted git commits with conventional commit messages",
-          "version": "1.0.0",
-          "tags": ["git", "commit", "workflow"]
-        },
-        {
-          "name": "pr",
-          "file": "pr.md",
-          "description": "Create pull requests with comprehensive descriptions",
-          "version": "1.0.0",
-          "tags": ["git", "github", "pr", "workflow"]
-        },
-        {
-          "name": "changelog",
-          "file": "changelog.md",
-          "description": "Generate changelog entries from git history",
-          "version": "1.0.0",
-          "tags": ["git", "changelog", "release"]
-        }
-      ]
-    },
-    {
-      "category": "file-formats",
-      "name": "File Formats",
-      "path": "skills/file-formats",
-      "description": "File format processing and conversion",
-      "items": [
-        {"name": "docx", "file": "docx.md", "description": "Word document processing", "version": "1.0.0", "tags": ["office", "documents", "word"]},
-        {"name": "xlsx", "file": "xlsx.md", "description": "Excel spreadsheet manipulation", "version": "1.0.0", "tags": ["office", "spreadsheet", "excel"]},
-        {"name": "pptx", "file": "pptx.md", "description": "PowerPoint presentation creation", "version": "1.0.0", "tags": ["office", "presentation", "powerpoint"]},
-        {"name": "pdf", "file": "pdf.md", "description": "PDF generation and manipulation", "version": "1.0.0", "tags": ["pdf", "documents", "format"]},
-        {"name": "markdown", "file": "markdown.md", "description": "Markdown formatting and conversion", "version": "1.0.0", "tags": ["markdown", "documentation", "format"]},
-        {"name": "html-css", "file": "html-css.md", "description": "HTML/CSS generation and formatting", "version": "1.0.0", "tags": ["html", "css", "web"]},
-        {"name": "json-yaml", "file": "json-yaml.md", "description": "JSON/YAML parsing and conversion", "version": "1.0.0", "tags": ["json", "yaml", "data"]},
-        {"name": "svg", "file": "svg.md", "description": "SVG graphics generation", "version": "1.0.0", "tags": ["svg", "graphics", "vector"]},
-        {"name": "images", "file": "images.md", "description": "Image processing and optimization", "version": "1.0.0", "tags": ["images", "optimization", "graphics"]},
-        {"name": "archives", "file": "archives.md", "description": "ZIP/TAR archive handling", "version": "1.0.0", "tags": ["archive", "zip", "compression"]}
-      ]
-    },
-    {
-      "category": "languages",
-      "name": "Programming Languages",
-      "path": "skills/languages",
-      "description": "Language-specific development skills",
-      "items": [
-        {"name": "python", "file": "python.md", "description": "Python programming", "version": "1.0.0", "tags": ["python", "programming", "scripting"]},
-        {"name": "typescript", "file": "typescript.md", "description": "TypeScript development", "version": "1.0.0", "tags": ["typescript", "javascript", "types"]},
-        {"name": "javascript", "file": "javascript.md", "description": "JavaScript coding", "version": "1.0.0", "tags": ["javascript", "es6", "web"]},
-        {"name": "csharp", "file": "csharp.md", "description": "C# programming", "version": "1.0.0", "tags": ["csharp", "dotnet", "programming"]},
-        {"name": "java", "file": "java.md", "description": "Java development", "version": "1.0.0", "tags": ["java", "jvm", "enterprise"]},
-        {"name": "go", "file": "go.md", "description": "Go programming", "version": "1.0.0", "tags": ["go", "golang", "backend"]},
-        {"name": "rust", "file": "rust.md", "description": "Rust systems programming", "version": "1.0.0", "tags": ["rust", "systems", "memory-safety"]},
-        {"name": "kotlin", "file": "kotlin.md", "description": "Kotlin development", "version": "1.0.0", "tags": ["kotlin", "android", "jvm"]},
-        {"name": "swift", "file": "swift.md", "description": "Swift programming", "version": "1.0.0", "tags": ["swift", "ios", "apple"]},
-        {"name": "php", "file": "php.md", "description": "PHP scripting", "version": "1.0.0", "tags": ["php", "web", "backend"]},
-        {"name": "ruby", "file": "ruby.md", "description": "Ruby programming", "version": "1.0.0", "tags": ["ruby", "rails", "scripting"]},
-        {"name": "sql", "file": "sql.md", "description": "SQL queries and databases", "version": "1.0.0", "tags": ["sql", "database", "queries"]},
-        {"name": "bash", "file": "bash.md", "description": "Bash scripting", "version": "1.0.0", "tags": ["bash", "shell", "scripting"]},
-        {"name": "powershell", "file": "powershell.md", "description": "PowerShell scripting", "version": "1.0.0", "tags": ["powershell", "windows", "automation"]}
-      ]
-    },
-    {
-      "category": "frameworks",
-      "name": "Frameworks",
-      "path": "skills/frameworks",
-      "description": "Web and application framework expertise",
-      "items": [
-        {"name": "react", "file": "react.md", "description": "React component development", "version": "1.0.0", "tags": ["react", "frontend", "javascript"]},
-        {"name": "nextjs", "file": "nextjs.md", "description": "Next.js full-stack applications", "version": "1.0.0", "tags": ["nextjs", "react", "fullstack"]},
-        {"name": "vue", "file": "vue.md", "description": "Vue.js progressive framework", "version": "1.0.0", "tags": ["vue", "frontend", "javascript"]},
-        {"name": "angular", "file": "angular.md", "description": "Angular enterprise apps", "version": "1.0.0", "tags": ["angular", "frontend", "typescript"]},
-        {"name": "svelte", "file": "svelte.md", "description": "Svelte reactive framework", "version": "1.0.0", "tags": ["svelte", "frontend", "reactive"]},
-        {"name": "express", "file": "express.md", "description": "Express.js Node server", "version": "1.0.0", "tags": ["express", "nodejs", "backend"]},
-        {"name": "fastapi", "file": "fastapi.md", "description": "FastAPI Python async framework", "version": "1.0.0", "tags": ["fastapi", "python", "backend"]},
-        {"name": "django", "file": "django.md", "description": "Django Python web framework", "version": "1.0.0", "tags": ["django", "python", "backend"]},
-        {"name": "flask", "file": "flask.md", "description": "Flask Python microframework", "version": "1.0.0", "tags": ["flask", "python", "backend"]},
-        {"name": "spring-boot", "file": "spring-boot.md", "description": "Spring Boot Java framework", "version": "1.0.0", "tags": ["spring", "java", "backend"]},
-        {"name": "aspnet-core", "file": "aspnet-core.md", "description": "ASP.NET Core framework", "version": "1.0.0", "tags": ["aspnet", "dotnet", "backend"]},
-        {"name": "rails", "file": "rails.md", "description": "Ruby on Rails framework", "version": "1.0.0", "tags": ["rails", "ruby", "backend"]},
-        {"name": "laravel", "file": "laravel.md", "description": "Laravel PHP framework", "version": "1.0.0", "tags": ["laravel", "php", "backend"]},
-        {"name": "nestjs", "file": "nestjs.md", "description": "NestJS TypeScript framework", "version": "1.0.0", "tags": ["nestjs", "typescript", "backend"]},
-        {"name": "gin", "file": "gin.md", "description": "Gin Go web framework", "version": "1.0.0", "tags": ["gin", "go", "backend"]}
-      ]
-    },
-    {
-      "category": "databases",
-      "name": "Databases",
-      "path": "skills/databases",
-      "description": "Database management and optimization",
-      "items": [
-        {"name": "postgresql", "file": "postgresql.md", "description": "PostgreSQL relational database", "version": "1.0.0", "tags": ["postgresql", "sql", "database"]},
-        {"name": "mysql", "file": "mysql.md", "description": "MySQL database management", "version": "1.0.0", "tags": ["mysql", "sql", "database"]},
-        {"name": "mongodb", "file": "mongodb.md", "description": "MongoDB NoSQL document database", "version": "1.0.0", "tags": ["mongodb", "nosql", "database"]},
-        {"name": "redis", "file": "redis.md", "description": "Redis in-memory data store", "version": "1.0.0", "tags": ["redis", "cache", "database"]},
-        {"name": "elasticsearch", "file": "elasticsearch.md", "description": "Elasticsearch search and analytics", "version": "1.0.0", "tags": ["elasticsearch", "search", "analytics"]},
-        {"name": "sqlite", "file": "sqlite.md", "description": "SQLite embedded database", "version": "1.0.0", "tags": ["sqlite", "sql", "embedded"]},
-        {"name": "dynamodb", "file": "dynamodb.md", "description": "AWS DynamoDB NoSQL database", "version": "1.0.0", "tags": ["dynamodb", "aws", "nosql"]},
-        {"name": "cassandra", "file": "cassandra.md", "description": "Apache Cassandra distributed database", "version": "1.0.0", "tags": ["cassandra", "nosql", "distributed"]}
-      ]
-    },
-    {
-      "category": "cloud-platforms",
-      "name": "Cloud Platforms",
-      "path": "skills/cloud-platforms",
-      "description": "Cloud platform deployment and management",
-      "items": [
-        {"name": "aws", "file": "aws.md", "description": "Amazon Web Services cloud platform", "version": "1.0.0", "tags": ["aws", "cloud", "infrastructure"]},
-        {"name": "azure", "file": "azure.md", "description": "Microsoft Azure cloud platform", "version": "1.0.0", "tags": ["azure", "cloud", "microsoft"]},
-        {"name": "gcp", "file": "gcp.md", "description": "Google Cloud Platform", "version": "1.0.0", "tags": ["gcp", "cloud", "google"]},
-        {"name": "vercel", "file": "vercel.md", "description": "Vercel deployment platform", "version": "1.0.0", "tags": ["vercel", "deployment", "frontend"]},
-        {"name": "cloudflare", "file": "cloudflare.md", "description": "Cloudflare edge network and services", "version": "1.0.0", "tags": ["cloudflare", "cdn", "edge"]}
-      ]
-    },
-    {
-      "category": "devops-tools",
-      "name": "DevOps Tools",
-      "path": "skills/devops-tools",
-      "description": "DevOps and infrastructure automation tools",
-      "items": [
-        {"name": "docker", "file": "docker.md", "description": "Docker containerization", "version": "1.0.0", "tags": ["docker", "containers", "devops"]},
-        {"name": "kubernetes", "file": "kubernetes.md", "description": "Kubernetes container orchestration", "version": "1.0.0", "tags": ["kubernetes", "k8s", "orchestration"]},
-        {"name": "terraform", "file": "terraform.md", "description": "Terraform infrastructure as code", "version": "1.0.0", "tags": ["terraform", "iac", "infrastructure"]},
-        {"name": "ansible", "file": "ansible.md", "description": "Ansible configuration management", "version": "1.0.0", "tags": ["ansible", "configuration", "automation"]},
-        {"name": "github-actions", "file": "github-actions.md", "description": "GitHub Actions CI/CD", "version": "1.0.0", "tags": ["github", "cicd", "automation"]},
-        {"name": "gitlab-ci", "file": "gitlab-ci.md", "description": "GitLab CI/CD pipelines", "version": "1.0.0", "tags": ["gitlab", "cicd", "pipelines"]},
-        {"name": "nginx", "file": "nginx.md", "description": "Nginx web server and reverse proxy", "version": "1.0.0", "tags": ["nginx", "web-server", "proxy"]},
-        {"name": "prometheus", "file": "prometheus.md", "description": "Prometheus monitoring and alerting", "version": "1.0.0", "tags": ["prometheus", "monitoring", "metrics"]}
-      ]
-    },
-    {
-      "category": "testing",
-      "name": "Testing",
-      "path": "skills/testing",
-      "description": "Test execution, coverage analysis, and testing frameworks",
-      "items": [
-        {
-          "name": "test",
-          "file": "test.md",
-          "description": "Run tests and analyze results",
-          "version": "1.0.0",
-          "tags": ["testing", "quality", "workflow"]
-        },
-        {
-          "name": "coverage",
-          "file": "coverage.md",
-          "description": "Generate and analyze test coverage reports",
-          "version": "1.0.0",
-          "tags": ["testing", "coverage", "quality"]
-        },
-        {"name": "jest", "file": "jest.md", "description": "Jest JavaScript testing framework", "version": "1.0.0", "tags": ["jest", "javascript", "testing"]},
-        {"name": "pytest", "file": "pytest.md", "description": "Pytest Python testing framework", "version": "1.0.0", "tags": ["pytest", "python", "testing"]},
-        {"name": "cypress", "file": "cypress.md", "description": "Cypress end-to-end testing", "version": "1.0.0", "tags": ["cypress", "e2e", "testing"]},
-        {"name": "playwright", "file": "playwright.md", "description": "Playwright browser automation", "version": "1.0.0", "tags": ["playwright", "e2e", "testing"]},
-        {"name": "xunit", "file": "xunit.md", "description": "xUnit .NET testing framework", "version": "1.0.0", "tags": ["xunit", "dotnet", "testing"]},
-        {"name": "junit", "file": "junit.md", "description": "JUnit Java testing framework", "version": "1.0.0", "tags": ["junit", "java", "testing"]},
-        {"name": "vitest", "file": "vitest.md", "description": "Vitest fast unit testing", "version": "1.0.0", "tags": ["vitest", "vite", "testing"]},
-        {"name": "postman", "file": "postman.md", "description": "Postman API testing", "version": "1.0.0", "tags": ["postman", "api", "testing"]}
-      ]
-    },
-    {
-      "category": "api-protocols",
-      "name": "API Protocols",
-      "path": "skills/api-protocols",
-      "description": "API design and protocol implementation",
-      "items": [
-        {"name": "rest-api", "file": "rest-api.md", "description": "RESTful API design and development", "version": "1.0.0", "tags": ["rest", "api", "http"]},
-        {"name": "graphql", "file": "graphql.md", "description": "GraphQL API development", "version": "1.0.0", "tags": ["graphql", "api", "query"]},
-        {"name": "grpc", "file": "grpc.md", "description": "gRPC high-performance RPC", "version": "1.0.0", "tags": ["grpc", "rpc", "protobuf"]},
-        {"name": "websocket", "file": "websocket.md", "description": "WebSocket real-time communication", "version": "1.0.0", "tags": ["websocket", "realtime", "communication"]},
-        {"name": "soap", "file": "soap.md", "description": "SOAP web services", "version": "1.0.0", "tags": ["soap", "xml", "web-services"]},
-        {"name": "webhook", "file": "webhook.md", "description": "Webhook event-driven integration", "version": "1.0.0", "tags": ["webhook", "events", "integration"]}
-      ]
-    },
-    {
-      "category": "docs",
-      "name": "Documentation",
-      "path": "skills/docs",
-      "description": "Documentation generation and maintenance",
-      "items": [
-        {
-          "name": "readme",
-          "file": "readme.md",
-          "description": "Generate or update project README",
-          "version": "1.0.0",
-          "tags": ["docs", "readme", "documentation"]
-        }
-      ]
-    }
-  ],
-  "templates": [
-    {
-      "name": "pr-description",
-      "file": "templates/pr-description.md",
-      "description": "Generate comprehensive PR descriptions",
+      "name": "awesome-claude-agents",
+      "source": ".",
+      "description": "A comprehensive marketplace of 28 production-ready agents and 74 specialized skills for Claude Code, covering development workflows, security, performance, DevOps, and more",
       "version": "1.0.0",
-      "tags": ["git", "workflow"]
+      "author": {
+        "name": "Smail Oubaalla"
+      },
+      "homepage": "https://github.com/Smaiil/awesome-claude-agents",
+      "repository": "https://github.com/Smaiil/awesome-claude-agents",
+      "license": "MIT",
+      "category": "development",
+      "keywords": ["agents", "skills", "claude-code", "development", "devops", "security", "testing"],
+      "agents": [
+        "./agents/core-development/code-reviewer.md",
+        "./agents/language-specialists/c-specialist.md",
+        "./agents/language-specialists/cpp-specialist.md",
+        "./agents/language-specialists/python-specialist.md",
+        "./agents/language-specialists/dotnet-specialist.md",
+        "./agents/language-specialists/typescript-specialist.md",
+        "./agents/architecture-design/system-architect.md",
+        "./agents/architecture-design/api-designer.md",
+        "./agents/architecture-design/database-architect.md",
+        "./agents/architecture-design/event-driven-architect.md",
+        "./agents/code-quality/refactoring-expert.md",
+        "./agents/code-quality/testing-strategist.md",
+        "./agents/code-quality/documentation-writer.md",
+        "./agents/devops-infrastructure/ci-cd-engineer.md",
+        "./agents/devops-infrastructure/docker-specialist.md",
+        "./agents/devops-infrastructure/kubernetes-operator.md",
+        "./agents/devops-infrastructure/terraform-engineer.md",
+        "./agents/devops-infrastructure/cloud-architect.md",
+        "./agents/security/security-auditor.md",
+        "./agents/security/auth-specialist.md",
+        "./agents/security/secrets-manager.md",
+        "./agents/performance-reliability/performance-engineer.md",
+        "./agents/performance-reliability/observability-expert.md",
+        "./agents/performance-reliability/sre-specialist.md",
+        "./agents/data/sql-expert.md",
+        "./agents/data/data-migration-specialist.md",
+        "./agents/data/caching-strategist.md",
+        "./agents/developer-experience/git-wizard.md",
+        "./agents/developer-experience/cli-builder.md",
+        "./agents/developer-experience/dev-environment-setup.md",
+        "./agents/specialized-tasks/regex-master.md",
+        "./agents/specialized-tasks/dependency-manager.md",
+        "./agents/specialized-tasks/debugging-detective.md",
+        "./agents/specialized-tasks/error-handler.md"
+      ],
+      "commands": [
+        "./skills/git/",
+        "./skills/file-formats/",
+        "./skills/languages/",
+        "./skills/frameworks/",
+        "./skills/databases/",
+        "./skills/cloud-platforms/",
+        "./skills/devops-tools/",
+        "./skills/testing/",
+        "./skills/api-protocols/",
+        "./skills/docs/"
+      ],
+      "strict": false
     }
   ]
 }
